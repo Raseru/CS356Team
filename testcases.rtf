@@ -1,0 +1,527 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww20700\viewh22800\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Naphtalis-iMac:calfuzzer naphtali$ ant -f test.xml deadlockfuzzer\
+Buildfile: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/test.xml\
+\
+deadlockfuzzer:\
+\
+section1:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 06:13:58 PST 2014\
+     [java] Transforming JGFSyncBench... \
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming JGFForkJoinBench... \
+     [java] Transforming JGFBarrierBench... \
+     [java] Transforming jgfutil.JGFSection1... \
+     [java] Transforming JGFAll... \
+     [java] Transforming TournamentBarrier... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming SyncMethodRunner... \
+     [java] Transforming SimpleBarrierThread... \
+     [java] Transforming Counter... \
+     [java] Transforming CounterClass... \
+     [java] Transforming SyncObjectRunner... \
+     [java] Transforming Barrier... \
+     [java] Transforming ForkJoinThread... \
+     [java] Transforming TournamentBarrierThread... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFSyncBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFForkJoinBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFBarrierBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection1.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAll.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/SyncMethodRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/SimpleBarrierThread.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/Counter.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/CounterClass.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/SyncObjectRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/ForkJoinThread.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/TournamentBarrierThread.class\
+     [java] Soot finished on Wed Jan 22 06:14:01 PST 2014\
+     [java] Soot has run for 0 min. 3 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 1\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section1:Barrier:Simple                 	107095.05	 (barriers/s)\
+     [java] Section1:Barrier:Tournament             	109075.414	 (barriers/s)\
+     [java] Section1:ForkJoin:Simple                	1980.8109	 (forkjoins/s)\
+     [java] Section1:Sync:Method                    	2525.4119	 (synchronisations/s)\
+     [java] Section1:Sync:Object                    	2513.51	 (synchronisations/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 2:06.637 sec]\
+\
+active-loop:\
+\
+section2A:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.log\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.stat\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 06:16:09 PST 2014\
+     [java] Transforming series.SeriesTest... \
+     [java] Transforming crypt.IDEATest... \
+     [java] Transforming lufact.JGFLUFactBench... \
+     [java] Transforming series.JGFSeriesBench... \
+     [java] Transforming lufact.Linpack... \
+     [java] Transforming sparsematmult.JGFSparseMatmultBench... \
+     [java] Transforming sor.JGFSORBench... \
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming crypt.JGFCryptBench... \
+     [java] Transforming sparsematmult.SparseMatmult... \
+     [java] Transforming jgfutil.JGFSection2... \
+     [java] Transforming sor.SOR... \
+     [java] Transforming JGFAllSizeA... \
+     [java] Transforming sparsematmult.SparseRunner... \
+     [java] Transforming sor.SORRunner... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming crypt.IDEARunner... \
+     [java] Transforming lufact.LinpackRunner... \
+     [java] Transforming series.SeriesRunner... \
+     [java] Transforming lufact.Barrier... \
+     [java] Transforming lufact.TournamentBarrier... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesTest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEATest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/JGFLUFactBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/JGFSeriesBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Linpack.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/JGFSparseMatmultBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/JGFSORBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/JGFCryptBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseMatmult.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection2.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SOR.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAllSizeA.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SORRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEARunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/LinpackRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/TournamentBarrier.class\
+     [java] Soot finished on Wed Jan 22 06:16:17 PST 2014\
+     [java] Soot has run for 0 min. 7 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 2 - Size A\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section2:Series:Kernel:SizeA	2.568 (s) 	 7787.7725	 (coefficients/s)\
+     [java] Section2:LUFact:Kernel:SizeA	9.581 (s) 	 8.749956	 (Mflops/s)\
+     [java] Section2:Crypt:Kernel:SizeA	7.685 (s) 	 780.7417	 (Kbyte/s)\
+     [java] Section2:SOR:Kernel:SizeA	46.025 (s) 	 2.172732	 (Iterations/s)\
+     [java] Section2:SparseMatmult:Kernel:SizeA	48.803 (s) 	 4.098109	 (Iterations/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 1:58.224 sec]\
+\
+active-loop:\
+\
+section2B:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.log\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.stat\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 06:18:16 PST 2014\
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming sparsematmult.SparseMatmult... \
+     [java] Transforming lufact.Linpack... \
+     [java] Transforming jgfutil.JGFSection2... \
+     [java] Transforming sparsematmult.JGFSparseMatmultBench... \
+     [java] Transforming sor.SOR... \
+     [java] Transforming sor.JGFSORBench... \
+     [java] Transforming series.JGFSeriesBench... \
+     [java] Transforming crypt.JGFCryptBench... \
+     [java] Transforming JGFAllSizeB... \
+     [java] Transforming lufact.JGFLUFactBench... \
+     [java] Transforming series.SeriesTest... \
+     [java] Transforming crypt.IDEATest... \
+     [java] Transforming crypt.IDEARunner... \
+     [java] Transforming sparsematmult.SparseRunner... \
+     [java] Transforming lufact.LinpackRunner... \
+     [java] Transforming series.SeriesRunner... \
+     [java] Transforming lufact.TournamentBarrier... \
+     [java] Transforming sor.SORRunner... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming lufact.Barrier... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseMatmult.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Linpack.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection2.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/JGFSparseMatmultBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SOR.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/JGFSORBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/JGFSeriesBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/JGFCryptBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAllSizeB.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/JGFLUFactBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesTest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEATest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEARunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/LinpackRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SORRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Barrier.class\
+     [java] Soot finished on Wed Jan 22 06:18:24 PST 2014\
+     [java] Soot has run for 0 min. 7 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 2 - Size B\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section2:Series:Kernel:SizeB	25.101 (s) 	 7967.77	 (coefficients/s)\
+     [java] Section2:LUFact:Kernel:SizeB	75.407 (s) 	 8.8674345	 (Mflops/s)\
+     [java] Section2:Crypt:Kernel:SizeB	52.089 (s) 	 767.91644	 (Kbyte/s)\
+     [java] Section2:SOR:Kernel:SizeB	108.92 (s) 	 0.918105	 (Iterations/s)\
+     [java] Section2:SparseMatmult:Kernel:SizeB	102.468 (s) 	 1.9518288	 (Iterations/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 6:16.792 sec]\
+\
+active-loop:\
+\
+section2C:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.log\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.stat\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 06:24:42 PST 2014\
+     [java] Transforming sor.SOR... \
+     [java] Transforming series.JGFSeriesBench... \
+     [java] Transforming lufact.JGFLUFactBench... \
+     [java] Transforming crypt.IDEATest... \
+     [java] Transforming sparsematmult.SparseMatmult... \
+     [java] Transforming series.SeriesTest... \
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming lufact.Linpack... \
+     [java] Transforming crypt.JGFCryptBench... \
+     [java] Transforming JGFAllSizeC... \
+     [java] Transforming sparsematmult.JGFSparseMatmultBench... \
+     [java] Transforming sor.JGFSORBench... \
+     [java] Transforming jgfutil.JGFSection2... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming lufact.LinpackRunner... \
+     [java] Transforming lufact.TournamentBarrier... \
+     [java] Transforming lufact.Barrier... \
+     [java] Transforming series.SeriesRunner... \
+     [java] Transforming sor.SORRunner... \
+     [java] Transforming crypt.IDEARunner... \
+     [java] Transforming sparsematmult.SparseRunner... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SOR.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/JGFSeriesBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/JGFLUFactBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEATest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseMatmult.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesTest.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Linpack.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/JGFCryptBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAllSizeC.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/JGFSparseMatmultBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/JGFSORBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection2.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/LinpackRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/lufact/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/series/SeriesRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sor/SORRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/crypt/IDEARunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/sparsematmult/SparseRunner.class\
+     [java] Soot finished on Wed Jan 22 06:24:50 PST 2014\
+     [java] Soot has run for 0 min. 8 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 2 - Size C\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section2:Series:Kernel:SizeC	356.702 (s) 	 5606.9185	 (coefficients/s)\
+     [java] Section2:LUFact:Kernel:SizeC	562.601 (s) 	 9.493999	 (Mflops/s)\
+     [java] Section2:Crypt:Kernel:SizeC	126.553 (s) 	 790.18274	 (Kbyte/s)\
+     [java] Section2:SOR:Kernel:SizeC	187.764 (s) 	 0.5325835	 (Iterations/s)\
+     [java] Validation failed\
+     [java] ytotal = 749.5245870754868  1.1164047464262694E-10  2\
+     [java] Section2:SparseMatmult:Kernel:SizeC	580.019 (s) 	 0.3448163	 (Iterations/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 30:52.437 sec]\
+\
+active-loop:\
+\
+section3A:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.log\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.stat\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 06:55:44 PST 2014\
+     [java] Transforming moldyn.md... \
+     [java] Transforming raytracer.Scene... \
+     [java] Transforming raytracer.Interval... \
+     [java] Transforming raytracer.Vec... \
+     [java] Transforming montecarlo.CallAppDemo... \
+     [java] Transforming jgfutil.JGFSection3... \
+     [java] Transforming raytracer.JGFRayTracerBench... \
+     [java] Transforming raytracer.Ray... \
+     [java] Transforming moldyn.JGFMolDynBench... \
+     [java] Transforming raytracer.View... \
+     [java] Transforming raytracer.Primitive... \
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming raytracer.Isect... \
+     [java] Transforming raytracer.Surface... \
+     [java] Transforming montecarlo.Universal... \
+     [java] Transforming montecarlo.DemoException... \
+     [java] Transforming raytracer.Light... \
+     [java] Transforming JGFAllSizeD... \
+     [java] Transforming montecarlo.JGFMonteCarloBench... \
+     [java] Transforming raytracer.RayTracer... \
+     [java] Transforming montecarlo.AppDemo... \
+     [java] Transforming montecarlo.ReturnPath... \
+     [java] Transforming moldyn.random... \
+     [java] Transforming montecarlo.ToResult... \
+     [java] Transforming moldyn.particle... \
+     [java] Transforming raytracer.RayTracerRunner... \
+     [java] Transforming moldyn.TournamentBarrier... \
+     [java] Transforming raytracer.Barrier... \
+     [java] Transforming montecarlo.ToTask... \
+     [java] Transforming moldyn.Barrier... \
+     [java] Transforming montecarlo.PriceStock... \
+     [java] Transforming montecarlo.PathId... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming montecarlo.ToInitAllTasks... \
+     [java] Transforming montecarlo.AppDemoThread... \
+     [java] Transforming montecarlo.MonteCarloPath... \
+     [java] Transforming raytracer.Sphere... \
+     [java] Transforming montecarlo.RatePath... \
+     [java] Transforming raytracer.TournamentBarrier... \
+     [java] Transforming moldyn.mdRunner... \
+     [java] Transforming montecarlo.Utilities... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/md.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Scene.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Interval.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Vec.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/CallAppDemo.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection3.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/JGFRayTracerBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Ray.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/JGFMolDynBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/View.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Primitive.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Isect.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Surface.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/Universal.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/DemoException.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Light.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAllSizeD.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/JGFMonteCarloBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/RayTracer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/AppDemo.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ReturnPath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/random.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToResult.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/particle.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/RayTracerRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToTask.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/PriceStock.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/PathId.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToInitAllTasks.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/AppDemoThread.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/MonteCarloPath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Sphere.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/RatePath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/mdRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/Utilities.class\
+     [java] Soot finished on Wed Jan 22 06:55:53 PST 2014\
+     [java] Soot has run for 0 min. 9 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 3 - Size A\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section3:MolDyn:Run:SizeA	134.837 (s) 	 9293.45	 (Interactions/s)\
+     [java] Section3:MolDyn:Total:SizeA	135.117 (s) 	 0.0074009933	 (Solutions/s)\
+     [java] Section3:MonteCarlo:Run:SizeA	273.554 (s) 	 36.555855	 (Samples/s)\
+     [java] Section3:MonteCarlo:Total:SizeA	276.795 (s) 	 0.003612782	 (Solutions/s)\
+     [java] Section3:RayTracer:Init:SizeA	0.017 (s) 	 3764.7058	 (Objects/s)\
+     [java] Section3:RayTracer:Run:SizeA	339.395 (s) 	 66.29443	 (Pixels/s)\
+     [java] Section3:RayTracer:Total:SizeA	339.481 (s) 	 0.002945673	 (Solutions/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 12:31.629 sec]\
+\
+active-loop:\
+\
+section3B:\
+\
+clean:\
+   [delete] Deleting directory /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/javato.usedids\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/iidToLine.map.html\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.log\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.list\
+   [delete] Deleting: /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/error.stat\
+\
+instr:\
+     [java] Soot started on Wed Jan 22 07:08:26 PST 2014\
+     [java] Transforming montecarlo.DemoException... \
+     [java] Transforming raytracer.Ray... \
+     [java] Transforming montecarlo.CallAppDemo... \
+     [java] Transforming raytracer.Primitive... \
+     [java] Transforming raytracer.RayTracer... \
+     [java] Transforming raytracer.Light... \
+     [java] Transforming montecarlo.Universal... \
+     [java] Transforming jgfutil.JGFInstrumentor... \
+     [java] Transforming moldyn.JGFMolDynBench... \
+     [java] Transforming montecarlo.AppDemo... \
+     [java] Transforming raytracer.Isect... \
+     [java] Transforming raytracer.Vec... \
+     [java] Transforming jgfutil.JGFSection3... \
+     [java] Transforming raytracer.View... \
+     [java] Transforming JGFAllSizeE... \
+     [java] Transforming raytracer.Surface... \
+     [java] Transforming moldyn.md... \
+     [java] Transforming montecarlo.JGFMonteCarloBench... \
+     [java] Transforming raytracer.JGFRayTracerBench... \
+     [java] Transforming raytracer.Scene... \
+     [java] Transforming raytracer.Interval... \
+     [java] Transforming montecarlo.ReturnPath... \
+     [java] Transforming raytracer.Barrier... \
+     [java] Transforming raytracer.RayTracerRunner... \
+     [java] Transforming moldyn.random... \
+     [java] Transforming moldyn.mdRunner... \
+     [java] Transforming montecarlo.PathId... \
+     [java] Transforming montecarlo.AppDemoThread... \
+     [java] Transforming moldyn.Barrier... \
+     [java] Transforming raytracer.Sphere... \
+     [java] Transforming moldyn.particle... \
+     [java] Transforming montecarlo.ToInitAllTasks... \
+     [java] Transforming montecarlo.MonteCarloPath... \
+     [java] Transforming montecarlo.PriceStock... \
+     [java] Transforming montecarlo.ToTask... \
+     [java] Transforming moldyn.TournamentBarrier... \
+     [java] Transforming raytracer.TournamentBarrier... \
+     [java] Transforming montecarlo.ToResult... \
+     [java] Transforming montecarlo.RatePath... \
+     [java] Transforming jgfutil.JGFTimer... \
+     [java] Transforming montecarlo.Utilities... \
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/DemoException.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Ray.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/CallAppDemo.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Primitive.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/RayTracer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Light.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/Universal.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFInstrumentor.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/JGFMolDynBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/AppDemo.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Isect.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Vec.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFSection3.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/View.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/JGFAllSizeE.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Surface.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/md.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/JGFMonteCarloBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/JGFRayTracerBench.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Scene.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Interval.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ReturnPath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/RayTracerRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/random.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/mdRunner.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/PathId.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/AppDemoThread.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/Barrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/Sphere.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/particle.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToInitAllTasks.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/MonteCarloPath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/PriceStock.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToTask.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/moldyn/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/raytracer/TournamentBarrier.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/ToResult.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/RatePath.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/jgfutil/JGFTimer.class\
+     [java] Writing to /Users/naphtali/Desktop/CONSTANTS/CS356Team-master/calfuzzer/src/benchmarks/tmpclasses/montecarlo/Utilities.class\
+     [java] Soot finished on Wed Jan 22 07:08:36 PST 2014\
+     [java] Soot has run for 0 min. 10 sec.\
+\
+analysis-once:\
+     [java] Analysis class javato.activetesting.IGoodlockAnalysis\
+     [java] Java Grande Forum Thread Benchmark Suite - Version 1.0 - Section 3 - Size B\
+     [java] Executing on 2 threads\
+     [java] \
+     [java] Section3:MolDyn:Run:SizeB	2515.856 (s) 	 10712.837	 (Interactions/s)\
+     [java] Section3:MolDyn:Total:SizeB	2516.609 (s) 	 3.973601E-4	 (Solutions/s)\
+     [java] Section3:MonteCarlo:Run:SizeB	10837.437 (s) 	 5.5363646	 (Samples/s)\
+     [java] Section3:MonteCarlo:Total:SizeB	10880.737 (s) 	 9.190554E-5	 (Solutions/s)\
+     [java] Section3:RayTracer:Init:SizeB	0.136 (s) 	 470.58823	 (Objects/s)\
+     [java] Section3:RayTracer:Run:SizeB	3909.547 (s) 	 63.946026	 (Pixels/s)\
+     [java] Section3:RayTracer:Total:SizeB	3910.073 (s) 	 2.557497E-4	 (Solutions/s)\
+     [java] # of deadlocks detected 0\
+[stopwatch] [timer: 288:27.712 sec]\
+\
+active-loop:\
+\
+BUILD SUCCESSFUL\
+Total time: 343 minutes 7 seconds\
+Naphtalis-iMac:calfuzzer naphtali$ \
+}
